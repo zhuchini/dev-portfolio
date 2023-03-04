@@ -2,6 +2,7 @@
   box-sizing: boder-box;
   margin: 0;
   padding: 0;
+  font-family: 'Jost', sans-serif;
 }
 
 body {
@@ -10,9 +11,20 @@ body {
   flex-direction: column;
   background: #0f172a;
   color: white;
-  font-family: 'Jost', sans-serif;
 }
 
 header {
   min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+header div {
+  display: flex;
+  gap: 20px;
+}
+
+header div h1:first-child {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
 }

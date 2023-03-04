@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Jost', sans-serif;
+  transition-duration: 300ms;
 }
 
 body {
@@ -15,8 +16,16 @@ body {
 
 header {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4.6rem;
+  user-select: none;
 }
 
 header div {
@@ -27,4 +36,15 @@ header div {
 header div h1:first-child {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px white;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header ul li {
+  list-style-type: none;
+  font-size: 0.9rem;
 }

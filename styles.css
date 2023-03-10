@@ -133,8 +133,43 @@ section:nth-child(2n + 1) .section-header::after {
   background: white;
 }
 
-.section-content {
+.section-wrapper {
   width: 100%;
   max-width: 75ch;
   margin: 0 auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1em;
+  text-align: left;
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-header h2 {
+  font-weight: 500;
+}
+
+.experience-subheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #cbd5e1;
+}
+
+.resume-item > p {
+  padding: 2px 0;
+  color: aliceblue;
 }
